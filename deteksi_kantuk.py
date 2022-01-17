@@ -113,7 +113,7 @@ ap.add_argument("-w", "--webcam", type=int, default=0, help="index of webcam on 
 args = vars(ap.parse_args())
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
-telegram_bot = telepot.Bot('1906430790:AAHLxAbQfSSCvCtUw0JqweLWbTQNrRPWlxE')
+telegram_bot = telepot.Bot('YOUR BOT TELeGRAM')
 MessageLoop(telegram_bot, kirim_pesan).run_as_thread()
 buzzer = Buzzer(4)
 
